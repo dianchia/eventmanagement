@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<?p
+$conn = mysqli_connect("localhost","dianchia","dian0418)$!*","userdata");
+	if ($conn->connect_error) {
+		die("Connection failed: " . $conn->connect_error);
+	}
+?>
+<html lang="en">
+<head>
+<title>Sign Up</title>
+<link rel="stylesheet" href="signup style.css">
+</head>
+<body>
+<form method="post" action="signup.php"/>
+<fieldset>
+<label>First name: <input type="text" name="fname" id="fname" required><br><br></label>
+<label>Last name:<input type="text" name="lname" id="lname" required><br><br></label>
+<label>Gender: <input type="radio" name="gender" >Male&nbsp;&nbsp;<input type="radio" name="gender">Female
+<input type="radio" name="gender">Other<br><br></label>
+<label>Username: <input type="text" name="username" id="username" required><br><br></label>
+<label>Password: <input type="password" name="password" id="password" required><br><br></label>
+<label>Comfirm password: <input type="password" name="password_comfirm" id="password_comfirm" required><br><br></label>
+</fieldset><br><br>
+<input type="submit" value="submit">&nbsp;&nbsp;
+<input type="reset">
+</form>
+</body>
+</html>
+
